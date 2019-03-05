@@ -22,7 +22,7 @@ namespace NQueens
         // driver method
         public void SolveBacktracking()
         {
-            solveBacktracking(0);
+            SolveBacktracking(0);
         }
 
         private void SolveBacktracking(int row)
@@ -48,11 +48,11 @@ namespace NQueens
             {
                 int queenCol = -1;
                 int nrOfQueens = 0;
-                
+
                 // check horizontally
                 for (int c = 0; c < n; c++)
                 {
-                    if (queens[r][c])
+                    if (queens[r,c])
                     {
                         nrOfQueens++;
                         queenCol = c;
@@ -64,7 +64,7 @@ namespace NQueens
                         // check column
                         for (int qr = r + 1; qr < n; qr++) //start from next row
                         {
-                            if (queens[qr][queenCol])
+                            if (queens[qr,queenCol])
                                 return false; // there is another queen on this column
                         }
 
@@ -72,7 +72,7 @@ namespace NQueens
                         int dc = queenCol + 1;
                         for (int qr = r + 1; qr < n && dc < n; qr++) //start from next row
                         {
-                            if (queens[qr][dc])
+                            if (queens[qr,dc])
                                 return false; // there is another queen on this column
                             dc++;
                         }
@@ -80,7 +80,7 @@ namespace NQueens
                         dc = queenCol - 1;
                         for (int qr = r + 1; qr < n && dc >= 0; qr++) //start from next row
                         {
-                            if (queens[qr][dc])
+                            if (queens[qr,dc])
                                 return false; // there is another queen on this column
                             dc--;
                         }
