@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinTicTacToeCS", "WinTicTacToeCS\WinTicTacToeCS.csproj", "{D25843B7-8C42-4E5A-B7AA-AAB8BEDD97DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D25843B7-8C42-4E5A-B7AA-AAB8BEDD97DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25843B7-8C42-4E5A-B7AA-AAB8BEDD97DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25843B7-8C42-4E5A-B7AA-AAB8BEDD97DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25843B7-8C42-4E5A-B7AA-AAB8BEDD97DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
